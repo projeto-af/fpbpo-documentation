@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>PIFPBPO001 - O que é uma PIFPBPO - Farmácia Popular do Brasil - Povos Originários</title>
+<link href="../../css/theme.css" rel="stylesheet"/>
+<link href="../../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<link href="../../assets/css/extra.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "PIFPBPO001 - O que \u00e9 uma PIFPBPO";
+        var mkdocs_page_input_path = "pifpbpo/PIFPBPO001.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a href="../..">
+<img alt="Logo" class="logo" src="../../assets/img/logo.png"/>
+</a><div role="search">
+<form action="../../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">PIFPBPO</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="#">PIFPBPO001 - O que é uma PIFPBPO</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resumo">Resumo</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#motivacao">Motivação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#implementacao">Implementação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#elementos-de-interface">Elementos de Interface</a>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Sobre</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sobre/sobre/">Sobre o Projeto</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../..">Farmácia Popular do Brasil - Povos Originários</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
+<li class="breadcrumb-item">PIFPBPO</li>
+<li class="breadcrumb-item active">PIFPBPO001 - O que é uma PIFPBPO</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="proposta-de-implementacao-farmacia-popular-do-brasil-povos-originarios">Proposta de Implementação Farmácia Popular do Brasil Povos Originários</h1>
+<table>
+<thead>
+<tr>
+<th><strong>PIFPB:</strong></th>
+<th>001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título:</strong></td>
+<td>Autenticação e autorização para acesso ao Programa FPBPO</td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Jessé Azevêdo <a href="mailto:jesse.azevedo@saude.gov.br">jesse.azevedo@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Michelly Ribeiro <a href="mailto:michelly.ribeiro@saude.gov.br">michelly.ribeiro@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Bruno de Oliveira <a href="mailto:bruno.baltazar@saude.gov.br">bruno.baltazar@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Status:</strong></td>
+<td>Em validação</td>
+</tr>
+<tr>
+<td><strong>Versão:</strong></td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-revisoes">Histórico de Revisões</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Versão</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Autor</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>09/02/2025</td>
+<td>Jessé Azevêdo</td>
+<td>Criação do documento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resumo">Resumo</h2>
+<p>Este documento tem por objetivo descrever o fluxo de autenticação e autorização para acesso ao programa Farmácia Popular do Brasil Povos Originários, bem como os requisitos necessários para a implementação do mesmo.</p>
+<h2 id="motivacao">Motivação</h2>
+<p>O Programa Farmácia Popular do Brasil Povos Originários (FPB-PO), é uma aplicação voltada a atender um fluxo específico de atendimentos para o Programa Farmácia Popular do Brasil com foco nas necessidades da saúde indígena.<br/>
+Este fluxo possui particularidades intrinsecas ao seu objetivo, havendo múltiplos atores envolvidos e necessidade de controle de acesso e autorização de uso.</p>
+<h2 id="implementacao">Implementação</h2>
+<p>O fluxo de autenticação e autorização para acesso ao Programa FPB-PO será implementado utilizando o protocolo OAuth 2.0 e OpenID Connect. Este é um requisito não funcional descrito nas <a href="https://wiki-coatic.saude.gov.br/pt-br/desenvolvimento-seguro/dev-seg-cap5">Diretrizes Arquiteturais do DATASUS</a>.  </p>
+<p>O processo de autorização envolve a interação entre um Cliente (aplicação) e o Servidor de Autorização (Gov.br), a interação pode ser resumida em 4 etapas:</p>
+<ol>
+<li><strong>Solicitação de autorização:</strong> O cliente solicita autorização ao usuário para acessar recursos protegidos.</li>
+<li><strong>Redirecionamento para Gov.br:</strong> O cliente redireciona o usuário para Gov.br para autenticação.</li>
+<li><strong>Retorno de código de autorização:</strong> Após a autenticação, Gov.br redireciona o usuário de volta para o cliente com um código de autorização.</li>
+<li><strong>Solicitação de token de acesso:</strong> O cliente solicita um token de acesso ao Servidor de Autorização, enviando o código de autorização e suas credenciais.</li>
+</ol>
+<p>Abaixo, o diagrama de sequência ilustra o fluxo em questão.</p>
+<div class="mermaid">sequenceDiagram
+participant Cliente
+participant Aplicação
+participant Gov.br
+participant Servidor de Autorização
+participant Servidor de Recursos
+    Cliente-&gt;&gt;Aplicação: Solicita acesso a recursos protegidos
+    Aplicação-&gt;&gt;Gov.br: Redireciona para Gov.br (tela de login)
+    Gov.br-&gt;&gt;Cliente: Exibe tela de login Gov.br
+    Cliente-&gt;&gt;Gov.br: Credenciais do usuário
+    Gov.br-&gt;&gt;Servidor de Autorização: Autentica usuário
+    Servidor de Autorização-&gt;&gt;Gov.br: Resposta de autenticação
+    Gov.br-&gt;&gt;Aplicação: Redireciona com código de autorização
+    Aplicação-&gt;&gt;Servidor de Autorização: Solicita token de acesso (código de autorização, Client ID, Client Secret)
+    Servidor de Autorização-&gt;&gt;Aplicação: Token de acesso e ID Token
+    Aplicação-&gt;&gt;Servidor de Recursos: Solicita recursos protegidos (com token de acesso)
+    Servidor de Recursos-&gt;&gt;Aplicação: Resposta com recursos protegidos
+    Aplicação-&gt;&gt;Cliente: Exibe recursos protegidos
+
+    note right of Servidor de Autorização: OpenID Connect: Validação do ID Token (informações do usuário)
+</div>
+<p>A implementação do fluxo de autorização deverá especificar os recursos que precisarão ser armazenados no banco de dados da aplicação, estes recursos serão passados por meio da <em>query string</em> <strong>scope</strong>. conforme tabela abaixo:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Escopo</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>openid</td>
+<td>Obrigatório para autenticação</td>
+</tr>
+<tr>
+<td>email</td>
+<td>E-mail do usuário</td>
+</tr>
+<tr>
+<td>profile</td>
+<td>Informações do usuário</td>
+</tr>
+<tr>
+<td>govbr_confiabilidades</td>
+<td>Nível de confiabilidade do usuário (selos)</td>
+</tr>
+</tbody>
+</table>
+<p>A aplicação deverá implementar a validação do ID Token, conforme especificado no <a href="https://openid.net/specs/openid-connect-core-1_0.html#IDTokenValidation">OpenID Connect</a>. Uma vez recebida autenticado, a aplicação poderá solicitar recursos protegidos ao Servidor de Recursos, enviando o token de acesso no cabeçalho da requisição. Como resposta, o Servidor de Recursos retornará os recursos solicitados que deverão ser persistidos em banco no primeiro login do usuário na aplicação.</p>
+<p>O Gov.Br retornará um objeto com as seguintes informações:</p>
+<pre><code class="language-json">{
+        "sub": "(CPF do usuário autenticado.)",
+        "amr": ["(Listagem dos fatores de autenticação do usuário com detalhamento. Verificar nas observações para os detalhamentos.)"],
+        "picture": "(URL de acesso à foto do usuário cadastrada no Gov.br. A mesma é protegida e pode ser acessada passando o access token recebido.)",
+        "name": "(Nome cadastrado no Gov.br do usuário autenticado.)",
+        "social_name": "(Nome Social cadastrado no Gov.br do usuário autenticado.Aparecerá apenas se existir no cadastro)",
+        "phone_number_verified": "(Confirma se o telefone foi validado no cadastro do Gov.br. Poderá ter o valor "true" ou "false")",
+        "phone_number": "(Número de telefone cadastrado no Gov.br do usuário autenticado. Caso o atributo phone_number_verified do ID_TOKEN tiver o valor false, o atributo phone_number não virá no ID_TOKEN)",
+        "email_verified": "(Confirma se o email foi validado no cadastro do Gov.br. Poderá ter o valor "true" ou "false")",
+        "email": "(Endereço de e-mail cadastrado no Gov.br do usuário autenticado. Caso o atributo email_verified do ID_TOKEN tiver o valor false, o atributo email não virá no ID_TOKEN)",
+        "cnpj": "(CNPJ vinculado ao usuário autenticado. Atributo será preenchido quando autenticação ocorrer por certificado digital de pessoal jurídica.)"
+}
+</code></pre>
+<p>Para recuperar os recursos relacionados a confiabilidade, a aplicação deverá solicitar ao Servidor de Recursos, enviando o token de acesso no cabeçalho da requisição. Como resposta, o Servidor de Recursos retornará os recursos solicitados. Esta chamada deverá ocorrer sempre que o usuário realizar uma autenticação na aplicação, muitos dos recursos da aplicação serão disponibilizados de acordo com o nível de confiabilidade do usuário. Abaixo retorno do Servidor de Recursos:</p>
+<pre><code class="language-json">[
+        {
+                "id": "1 (Bronze)",
+                "dataAtualizacao": "(Mostra a data e hora que ocorreu atualização da categoria na conta do usuário. A mascará será YYYY-MM-DD HH:MM:SS)"
+        },
+
+        {
+                "id": "2 (Prata)",
+                "dataAtualizacao": "(Mostra a data e hora que ocorreu atualização da categoria na conta do usuário. A mascará será YYYY-MM-DD HH:MM:SS)"
+        },
+
+        {
+                "id": "3 (Ouro)",
+                "dataAtualizacao": "(Mostra a data e hora que ocorreu atualização da categoria na conta do usuário. A mascará será YYYY-MM-DD HH:MM:SS)"
+        }
+]
+</code></pre>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ul>
+<li>A aplicação deverá implementar o fluxo de autorização utilizando OAuth 2.0 e OpenID Connect.</li>
+<li>A aplicação deverá implementar a validação do ID Token.</li>
+<li>A aplicação deverá persistir os recursos retornados pelo Servidor de Recursos.</li>
+<li>Ao logar pela primeira vez, o usuário deverá complementar seu cadastro, informando dados adicionais conforme título Modelo de Dados, descrito abaixo.</li>
+<li>A cada execução do fluxo de autenticação/autorização, a aplicação deverá verificar se houve atualização no cadastro do usuário, atualizando dados cadastrais pertinentes.</li>
+<li>A aplicação deverá implementar a solicitação de recursos de confiabilidade ao Servidor de Recursos.</li>
+<li>A cada execução do fluxo de autenticação/autorização, a aplicação deverá verificar o retorno do nível de confiabilidade do usuário, a aplicação deverá reagir aos níveis de confiabilidade definidos e conjunto de permissões atribuidas ao usuário.</li>
+</ul>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Atributo</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Cardinalidade</th>
+<th style="text-align: left;">Tipo de Dado</th>
+<th style="text-align: left;">Tamanho</th>
+<th style="text-align: left;">Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Identificador do Usuário</td>
+<td style="text-align: left;">Código sequencial com identificador do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome</td>
+<td style="text-align: left;">Nome do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome Social</td>
+<td style="text-align: left;">Nome Social cadastrado no Gov.br do usuário autenticado.</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">E-mail</td>
+<td style="text-align: left;">E-mail do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">e-mail</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CPF</td>
+<td style="text-align: left;">CPF do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">CPF</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Telefone</td>
+<td style="text-align: left;">Telefone do usuário</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">(xx) xxxxx-xxxx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Endereço</td>
+<td style="text-align: left;">Endereço do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Número</td>
+<td style="text-align: left;">Número do endereço</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Complemento</td>
+<td style="text-align: left;">Complemento do endereço</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Bairro</td>
+<td style="text-align: left;">Bairro do endereço</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Cidade</td>
+<td style="text-align: left;">Cidade do endereço</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">UF</td>
+<td style="text-align: left;">Estado do endereço</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CEP</td>
+<td style="text-align: left;">CEP do endereço</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p>OBS: </p>
+<ol>
+<li>O campo <strong>Nome Social</strong> será exibido apenas se existir no cadastro do usuário.</li>
+<li>UF, Bairro, Estado e Cidade deverão ser preenchidos automaticamente a partir do CEP informado pelo usuário, e deverá ser consumido na DBGERAL do MS.</li>
+</ol>
+<h2 id="elementos-de-interface">Elementos de Interface</h2>
+<p>Abaixo, o protótipo de tela para o fluxo de autenticação e autorização e cadastro complementar do usuário.</p>
+<p><a href="https://xd.adobe.com/view/10b5d8c8-f99d-4e67-ae0d-461860c55301-45e6/">Protótipos Farmácia Popular do Brasil Povos Originários</a></p>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../.." title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../sobre/sobre/" title="Sobre o Projeto">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../.." style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../sobre/sobre/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "../..";</script>
+<script src="../../js/theme_extra.js"></script>
+<script src="../../js/theme.js"></script>
+<script src="../../search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

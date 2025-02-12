@@ -1,0 +1,5 @@
+// Diretórios e Configurações de IDE's
+.idea
+.vscode
+*.iml
+*.ipr

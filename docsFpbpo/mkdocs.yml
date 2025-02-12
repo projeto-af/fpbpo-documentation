@@ -1,0 +1,21 @@
+site_name: Farmácia Popular do Brasil - Povos Originários
+
+dev_addr: 127.0.0.1:8005
+
+nav:
+  - Home: index.md
+  - PIFPBPO:
+      - PIFPBPO001 - O que é uma PIFPBPO: pifpbpo/PIFPBPO001.md
+  - Sobre:
+      - Sobre o Projeto: sobre/sobre.md
+
+theme:
+  name: readthedocs
+  logo: assets/img/logo.png
+
+extra_css:
+  - assets/css/extra.css
+
+plugins:
+  - search
+  - mermaid2

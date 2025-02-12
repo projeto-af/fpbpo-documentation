@@ -1,0 +1,10 @@
+# Farmácia Popular do Brasil Povos Originários
+
+No Sistema Único de Saúde (SUS), o acesso a medicamentos se dá prioritariamente por meio das farmácias públicas, espalhadas por todo o território, na Atenção Primária à Saúde, e para os casos excepcionais, através do Componente Especializado da Assistência Farmacêutica, de execução estadual, além disso, no ano de 2004, o Governo Federal lançou o programa Farmácia Popular do Brasil, como uma alternativa complementar para o acesso a medicamentos.  
+  
+O Programa surgiu através de uma demanda do Governo federal por uma proposta de ampliação do acesso a medicamentos, que se deu pela constatação da existência, nas grandes metrópoles, de uma grande parcela da população fazendo uso de serviços privados, mas com dificuldade de acesso a medicamentos (Bocage Santos-Pinto, du, Rosário Costa, do e Osorio-de-Castro, 2011).  
+A proposta de fornecimento de medicamentos a baixo custo utilizada pelo Laboratório Farmacêutico de Pernambuco (Lafepe) desde 2001 passou a servir de modelo para a nova iniciativa do Governo federal. O Programa foi caracterizado pela gestão conjunta entre Ministério da Saúde e Fundação Oswaldo Cruz (Fiocruz), que passou a cumprir o papel de executora do Programa (Bocage Santos-Pinto, du, Rosário Costa, do e Osorio-de-Castro, 2011).  
+  
+Atualmente o Programa Farmácia Popular do Brasil está presente em cerca de 31 mil unidades, o que proporciona capilaridade ao programa, chegando as mais longínquas unidades da federação e proporcionando o acesso a medicamentos para mais de 20 milhões de usuários ao ano.  
+  
+Este projeto tem por objetivo aprimorar o acesso a medicamentos para os povos originários, através da implementação de um sistema de informação que permita a gestão do Programa Farmácia Popular do Brasil Povos Originários, com a finalidade de garantir a segurança e a eficácia do uso de medicamentos, bem como a promoção do uso racional de medicamentos, a melhoria da adesão ao tratamento e a redução de custos para o SUS.

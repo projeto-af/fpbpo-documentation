@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>PIFPBPO003 - Atribuição de papéis a atores - Farmácia Popular do Brasil - Povos Originários</title>
+<link href="../../css/theme.css" rel="stylesheet"/>
+<link href="../../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<link href="../../assets/css/extra.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "PIFPBPO003 - Atribui\u00e7\u00e3o de pap\u00e9is a atores";
+        var mkdocs_page_input_path = "pifpbpo/PIFPBPO003.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a href="../..">
+<img alt="Logo" class="logo" src="../../assets/img/logo.png"/>
+</a><div role="search">
+<form action="../../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">PIFPBPO</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO001/">PIFPBPO001 - Autenticação e Autorização</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO002/">PIFPBPO002 - Papéis e recursos</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="#">PIFPBPO003 - Atribuição de papéis a atores</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resumo">Resumo</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#motivacao">Motivação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#implementacao">Implementação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#elementos-de-interface">Elementos de Interface</a>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Sobre</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sobre/sobre/">Sobre o Projeto</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../..">Farmácia Popular do Brasil - Povos Originários</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
+<li class="breadcrumb-item">PIFPBPO</li>
+<li class="breadcrumb-item active">PIFPBPO003 - Atribuição de papéis a atores</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="proposta-de-implementacao-farmacia-popular-do-brasil-povos-originarios">Proposta de Implementação Farmácia Popular do Brasil Povos Originários</h1>
+<table>
+<thead>
+<tr>
+<th><strong>PIFPB:</strong></th>
+<th>003</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título:</strong></td>
+<td>Gestão de papéis e permissão de acesso no FPBPO</td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Jessé Azevêdo <a href="mailto:jesse.azevedo@saude.gov.br">jesse.azevedo@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Michelly Ribeiro <a href="mailto:michelly.ribeiro@saude.gov.br">michelly.ribeiro@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Bruno de Oliveira <a href="mailto:bruno.baltazar@saude.gov.br">bruno.baltazar@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Status:</strong></td>
+<td>Em validação</td>
+</tr>
+<tr>
+<td><strong>Versão:</strong></td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-revisoes">Histórico de Revisões</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Versão</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Autor</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>15/02/2025</td>
+<td>Jessé Azevêdo</td>
+<td>Criação do documento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resumo">Resumo</h2>
+<p>O Documento <a href="../PIFPBPO002/">PIFPBPO002</a> define papéis que poderão ser desempenhados por um ator no âmbito da aplicação. Este documento tem por objetivo detalhar a implementação da gestão de papéis e permissão de acesso no Programa Farmácia Popular do Brasil Povos Originários (FPB-PO).</p>
+<h2 id="motivacao">Motivação</h2>
+<p>A aplicação Programa Farmácia Popular do Brasil Povos Originários (FPB-PO), precisa possuir um rígido controle de perrmissões, de forma a autorizar o acesso a recursos conforme o papel que cada ator desempenha no âmbito da aplicação. No documento <a href="../PIFPBPO002/">PIFPBPO002</a> foram definidos 6 papéis distintos, organizados em 3 grupos. No entanto, é necessário detalhar a implementação da gestão de papéis e permissão de acesso no FPB-PO. 
+Este documento traz detalhes sobre a implementação do controle de acesso, que será realizado por meio de um sistema de autorização baseado em funções (Role-Based Access Control - RBAC).</p>
+<h2 id="implementacao">Implementação</h2>
+<p>Para a implementação, trabalharemos o conceito de RBAC, onde cada papel desempenhado por um ator na aplicação, terá um conjunto de permissões associadas. As permissões são atribuídas a papéis, e os papéis são atribuídos a atores. A aplicação deverá implementar um sistema de autorização baseado em funções, onde cada ator terá um papel associado, e cada papel terá um conjunto de permissões associadas.</p>
+<p>A atribuição de um papel por si só pode não ser suficiente para que o ator realize suas operações. Alguns dos grupos de papéis da aplicação precisam estar atrelados a um estabelecimento de saúde (DSEI) ou a uma farmácia conveniada ao programa a esta associação entre estabelecimento de saúde (incluindo aqui as farmácias conveniadas) e o papel atribuido ao ator, chamamos de <strong>contexto</strong>.</p>
+<div class="mermaid">graph LR
+    subgraph Contexto
+        A[Ator] --&gt; B[Papel] --&gt; D[estabelecimento de saúde]
+    end
+</div>
+<p>Os papeis vinculados a Gestão Federal não possuem contexto, pois são atribuídos diretamente ao ator e não necessitam de um estabelecimento de saúde para sua atuação.</p>
+<p>A gestão de papéis e permissões de acesso respeitará um conjunto de regras específicas e utilizará apenas o conceito de <strong>atribuição</strong>. Em resumo, um papel é atribuído a um ator por outro ator que possua privilégios para tal. Cada ator poderá possuir um ou mais papéis dentro da aplicação.</p>
+<p>Uma vez atribuído um papel, o ator poderá acessar os recursos da aplicação conforme as permissões associadas ao papel. O ator no entando poderá remover um papel atribuído a si mesmo, bem como um ator com um papel que tenha privilégios poderá revogar a atribuição a qualquer momento.</p>
+<div class="mermaid">    sequenceDiagram
+    box Red Gestão Federal
+        participant Gestão do Programa Farmácia Popular
+        participant Gestor da Secretaria de Saúde Indígena
+    end
+    box Green Saúde Indígena
+        participant Responsável DSEI
+        participant Encarregado DSEI
+    end
+    box Gray Farmácia Conveniada
+        participant Responsável Legal
+        participant Farmacêutico/Atendente
+    end
+    Gestão do Programa Farmácia Popular-&gt;&gt;Gestor da Secretaria de Saúde Indígena: Atribui papel para ator
+    Gestor da Secretaria de Saúde Indígena-&gt;&gt;Responsável DSEI: Atribui papel para ator
+    Responsável DSEI-&gt;&gt;Encarregado DSEI: Atribui papel para ator
+    Gestão do Programa Farmácia Popular-&gt;&gt;Responsável Legal: Atribui papel para ator
+    Responsável Legal-&gt;&gt;Farmacêutico/Atendente: Atribui papel para ator
+
+    Gestão do Programa Farmácia Popular-&gt;&gt;Gestor da Secretaria de Saúde Indígena: Revoga papel atribuído
+    Gestor da Secretaria de Saúde Indígena-&gt;&gt;Responsável DSEI: Revoga papel atribuído
+    Responsável DSEI-&gt;&gt;Encarregado DSEI: Revoga papel atribuído
+    Gestão do Programa Farmácia Popular-&gt;&gt;Responsável Legal: Revoga papel atribuído
+    Responsável Legal-&gt;&gt;Farmacêutico/Atendente: Revoga papel atribuído
+
+    Gestão do Programa Farmácia Popular-&gt;&gt;Gestão do Programa Farmácia Popular: Revoga seu papel dentro da aplicação
+    Gestor da Secretaria de Saúde Indígena-&gt;&gt;Gestor da Secretaria de Saúde Indígena: Revoga seu papel dentro da aplicação
+    Responsável DSEI-&gt;&gt;Responsável DSEI: Revoga seu papel dentro da aplicação
+    Encarregado DSEI-&gt;&gt;Encarregado DSEI: Revoga seu papel dentro da aplicação
+    Responsável Legal-&gt;&gt;Responsável Legal: Revoga seu papel dentro da aplicação
+    Farmacêutico/Atendente-&gt;&gt;Farmacêutico/Atendente: Revoga seu papel dentro da aplicação
+</div>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ul>
+<li>A aplicação deverá possuir um sistema de autorização baseado em funções (RBAC).</li>
+<li>Papéis relacionados a Gestão Federal não precisam de um contexto para garantir sua plena atuação na aplicação.</li>
+<li>Papéis relacionados a Saúde Indígena e precisam estar atrelados a um estabelecimento de saúde (DSEI).</li>
+<li>Papéis relacionados a Farmácia/Drogaria conveniada ao programa precisam estar atrelados a uma CNPJ devidamente credenciado.</li>
+<li>O papel "Gestão do Programa Farmácia Popular" só poderá ser atribuído por um ator com o mesmo papel.</li>
+<li>O papel "Gestor da Secretaria de Saúde Indígena" poderá ser atribuído por um ator com o papel "Gestão do Programa Farmácia Popular" e "Gestor da Secretaria de Saúde Indígena".</li>
+<li>O papel "Responsável DSEI" só poderá ser atribuído por um ator com o papel "Gestor da Secretaria de Saúde Indígena".</li>
+<li>O papel "Encarregado DSEI" só poderá ser atribuído por um ator com o papel "Responsável DSEI".</li>
+<li>O papel "Responsável Legal" só poderá ser atribuído por um ator com o papel "Gestão do Programa Farmácia Popular".</li>
+<li>O papel "Farmacêutico/Atendente" só poderá ser atribuído por um ator com o papel "Responsável Legal".</li>
+<li>Um ator poderá possuir mais de um papel dentro da aplicação.</li>
+<li>Um ator poderá remover um papel atribuído a si.</li>
+<li>Um ator com um papel que tenha privilégios para conceder um papel a outro ator poderá revogar o mesmo conjutno de papéis ao qual possui privilégios de atribuir.</li>
+<li>Todo o fluxo de atribuição e revogação de papéis deverá ser registrado em tabela de auditoria.</li>
+<li>Um ator só pode ter um único papel ativo por contexto.</li>
+</ul>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Atributo</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Cardinalidade</th>
+<th style="text-align: left;">Tipo de Dado</th>
+<th style="text-align: left;">Tamanho</th>
+<th style="text-align: left;">Formato</th>
+<th style="text-align: left;">Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Identificador do Usuário</td>
+<td style="text-align: left;">Código sequencial com identificador do usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Identificador do Papel</td>
+<td style="text-align: left;">Código sequencial com identificador do papel</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Identificador do Estabelecimento</td>
+<td style="text-align: left;">Código sequencial com identificador do estabelecimento</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Atribuido apenas ao grupo de papéis relacionados a Saúde Indígena</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CNPJ</td>
+<td style="text-align: left;">Número de inscrição no CNPJ do estabelecimento</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">00.000.000/0000-00</td>
+<td style="text-align: left;">Atribuido apenas ao grupo de papéis relacionados a Farmácia/Drogaria conveniada ao programa</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Data de Atribuição</td>
+<td style="text-align: left;">Data em que o papel foi atribuído ao usuário</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">date</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">dd/mm/yyyy</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Data de Revogação</td>
+<td style="text-align: left;">Data em que o papel foi revogado do usuário</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">date</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">dd/mm/yyyy</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Atribuído por</td>
+<td style="text-align: left;">Identificador do usuário que atribuiu o papel</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Revogado por</td>
+<td style="text-align: left;">Identificador do usuário que revogou o papel</td>
+<td style="text-align: left;">(0, 1)</td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Campo enumerado que identifica se o papel atribuído está ativo ou revogado</td>
+<td style="text-align: left;">(1, 1)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">A/R</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<div class="mermaid">---
+title: Exemplo de diagrama para implementação das relações entre Usuário, Papel, Estabelecimento e CNPJ
+---
+erDiagram
+    USUARIO ||--o{ USUARIO_PAPEL : atribui
+    PAPEL ||--o{ USUARIO_PAPEL : atribui
+    ESTABELECIMENTO ||--o{ USUARIO_PAPEL : contexto
+    CNPJ ||--o{ USUARIO_PAPEL : contexto
+</div>
+<h2 id="elementos-de-interface">Elementos de Interface</h2>
+<p>Abaixo, o protótipo de tela para o fluxo de atribuição de papéis.</p>
+<p><a href="https://xd.adobe.com/view/10b5d8c8-f99d-4e67-ae0d-461860c55301-45e6/">Protótipos Farmácia Popular do Brasil Povos Originários</a></p>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../PIFPBPO002/" title="PIFPBPO002 - Papéis e recursos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../sobre/sobre/" title="Sobre o Projeto">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../PIFPBPO002/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../sobre/sobre/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "../..";</script>
+<script src="../../js/theme_extra.js"></script>
+<script src="../../js/theme.js"></script>
+<script src="../../search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

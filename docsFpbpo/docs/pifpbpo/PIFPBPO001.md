@@ -122,20 +122,21 @@ Para recuperar os recursos relacionados a confiabilidade, a aplicação deverá 
 
 ## Modelo de Dados
 
-| Nível | Atributo        | Descrição                                                | Cardinalidade | Tipo de Dado | Tamanho | Formato         |
-| :--- |:----------------|:---------------------------------------------------------|:--------------|:-------------|:--------|:----------------|
-| 1 | Nome            | Nome do usuário                                          | (1, 1)        | string | 100     | -               |
-| 1 | Nome Social     | Nome Social cadastrado no Gov.br do usuário autenticado. | (0, 1)        | string | 100     | -               |
-| 1 | E-mail          | E-mail do usuário                                        | (1, 1)        | string | 100     | e-mail          |
-| 1 | CPF             | CPF do usuário                                           | (1, 1)        | string | 11      | CPF             |
-| 1 | Telefone        | Telefone do usuário                                      | (0, 1)        | string | 15      | (xx) xxxxx-xxxx |
-| 1 | Endereço        | Endereço do usuário                                      | (1, 1)        | string | 100     | -               |
-| 1 | Número          | Número do endereço                                       | (1, 1)        | string | 10      | -               |
-| 1 | Complemento     | Complemento do endereço                                  | (0, 1)        | string | 100     | -               |
-| 1 | Bairro          | Bairro do endereço                                       | (1, 1)        | string | 100     | -               |
-| 1 | Cidade          | Cidade do endereço                                       | (1, 1)        | string | 100     | -               |
-| 1 | UF              | Estado do endereço                                       | (1, 1)        | string | 2       | -               |
-| 1 | CEP             | CEP do endereço                                          | (1, 1)        | string | 8       | -               |
+| Nível | Atributo        | Descrição                                                                    | Cardinalidade | Tipo de Dado | Tamanho | Formato         |
+| :--- |:----------------|:-----------------------------------------------------------------------------|:--------------|:-------------|:--------|:----------------|
+| 1 | Identificador   | Código sequencial que identifica univocamente um usuário no âmbito do FPB-PO | (1, 1)        | number | -       | -               |
+| 1 | Nome            | Nome do usuário                                                              | (1, 1)        | string | 100     | -               |
+| 1 | Nome Social     | Nome Social cadastrado no Gov.br do usuário autenticado.                     | (0, 1)        | string | 100     | -               |
+| 1 | E-mail          | E-mail do usuário                                                            | (1, 1)        | string | 100     | e-mail          |
+| 1 | CPF             | CPF do usuário                                                               | (1, 1)        | string | 11      | CPF             |
+| 1 | Telefone        | Telefone do usuário                                                          | (0, 1)        | string | 15      | (xx) xxxxx-xxxx |
+| 1 | Endereço        | Endereço do usuário                                                          | (1, 1)        | string | 100     | -               |
+| 1 | Número          | Número do endereço                                                           | (1, 1)        | string | 10      | -               |
+| 1 | Complemento     | Complemento do endereço                                                      | (0, 1)        | string | 100     | -               |
+| 1 | Bairro          | Bairro do endereço                                                           | (1, 1)        | string | 100     | -               |
+| 1 | Cidade          | Cidade do endereço                                                           | (1, 1)        | string | 100     | -               |
+| 1 | UF              | Estado do endereço                                                           | (1, 1)        | string | 2       | -               |
+| 1 | CEP             | CEP do endereço                                                              | (1, 1)        | string | 8       | -               |
 
 OBS: 
 

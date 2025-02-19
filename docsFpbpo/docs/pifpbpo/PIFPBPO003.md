@@ -31,6 +31,9 @@ Para a implementação, trabalharemos o conceito de RBAC, onde cada papel desemp
 A atribuição de um papel por si só pode não ser suficiente para que o ator realize suas operações. Alguns dos grupos de papéis da aplicação precisam estar atrelados a um estabelecimento de saúde (DSEI) ou a uma farmácia conveniada ao programa a esta associação entre estabelecimento de saúde (incluindo aqui as farmácias conveniadas) e o papel atribuido ao ator, chamamos de **contexto**.
 
 ```mermaid
+%%{
+  init: { 'theme': 'forest' }
+}%%
 graph LR
     subgraph Contexto
         A[Ator] --> B[Papel] --> D[estabelecimento de saúde]
@@ -43,16 +46,19 @@ A gestão de papéis e permissões de acesso respeitará um conjunto de regras e
 Uma vez atribuído um papel, o ator poderá acessar os recursos da aplicação conforme as permissões associadas ao papel. O ator no entando poderá remover um papel atribuído a si mesmo, bem como um ator com um papel que tenha privilégios poderá revogar a atribuição a qualquer momento.
 
 ```mermaid
+%%{
+  init: { 'theme': 'forest' }
+}%%
     sequenceDiagram
-    box Red Gestão Federal
+    box Gestão Federal
         participant Gestão do Programa Farmácia Popular
         participant Gestor da Secretaria de Saúde Indígena
     end
-    box Green Saúde Indígena
+    box Saúde Indígena
         participant Responsável DSEI
         participant Encarregado DSEI
     end
-    box Gray Farmácia Conveniada
+    box Farmácia Conveniada
         participant Responsável Legal
         participant Farmacêutico/Atendente
     end
@@ -111,6 +117,9 @@ Uma vez atribuído um papel, o ator poderá acessar os recursos da aplicação c
 ---
 title: Exemplo de diagrama para implementação das relações entre Usuário, Papel, Estabelecimento e CNPJ
 ---
+%%{
+  init: { 'theme': 'forest' }
+}%%
 erDiagram
     USUARIO ||--o{ USUARIO_PAPEL : atribui
     PAPEL ||--o{ USUARIO_PAPEL : atribui

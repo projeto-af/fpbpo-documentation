@@ -154,7 +154,10 @@ Este documento traz detalhes sobre a implementação do controle de acesso, que 
 <h2 id="implementacao">Implementação</h2>
 <p>Para a implementação, trabalharemos o conceito de RBAC, onde cada papel desempenhado por um ator na aplicação, terá um conjunto de permissões associadas. As permissões são atribuídas a papéis, e os papéis são atribuídos a atores. A aplicação deverá implementar um sistema de autorização baseado em funções, onde cada ator terá um papel associado, e cada papel terá um conjunto de permissões associadas.</p>
 <p>A atribuição de um papel por si só pode não ser suficiente para que o ator realize suas operações. Alguns dos grupos de papéis da aplicação precisam estar atrelados a um estabelecimento de saúde (DSEI) ou a uma farmácia conveniada ao programa a esta associação entre estabelecimento de saúde (incluindo aqui as farmácias conveniadas) e o papel atribuido ao ator, chamamos de <strong>contexto</strong>.</p>
-<div class="mermaid">graph LR
+<div class="mermaid">%%{
+  init: { 'theme': 'forest' }
+}%%
+graph LR
     subgraph Contexto
         A[Ator] --&gt; B[Papel] --&gt; D[estabelecimento de saúde]
     end
@@ -162,16 +165,19 @@ Este documento traz detalhes sobre a implementação do controle de acesso, que 
 <p>Os papeis vinculados a Gestão Federal não possuem contexto, pois são atribuídos diretamente ao ator e não necessitam de um estabelecimento de saúde para sua atuação.</p>
 <p>A gestão de papéis e permissões de acesso respeitará um conjunto de regras específicas e utilizará apenas o conceito de <strong>atribuição</strong>. Em resumo, um papel é atribuído a um ator por outro ator que possua privilégios para tal. Cada ator poderá possuir um ou mais papéis dentro da aplicação.</p>
 <p>Uma vez atribuído um papel, o ator poderá acessar os recursos da aplicação conforme as permissões associadas ao papel. O ator no entando poderá remover um papel atribuído a si mesmo, bem como um ator com um papel que tenha privilégios poderá revogar a atribuição a qualquer momento.</p>
-<div class="mermaid">    sequenceDiagram
-    box Red Gestão Federal
+<div class="mermaid">%%{
+  init: { 'theme': 'forest' }
+}%%
+    sequenceDiagram
+    box Gestão Federal
         participant Gestão do Programa Farmácia Popular
         participant Gestor da Secretaria de Saúde Indígena
     end
-    box Green Saúde Indígena
+    box Saúde Indígena
         participant Responsável DSEI
         participant Encarregado DSEI
     end
-    box Gray Farmácia Conveniada
+    box Farmácia Conveniada
         participant Responsável Legal
         participant Farmacêutico/Atendente
     end
@@ -322,6 +328,9 @@ Este documento traz detalhes sobre a implementação do controle de acesso, que 
 <div class="mermaid">---
 title: Exemplo de diagrama para implementação das relações entre Usuário, Papel, Estabelecimento e CNPJ
 ---
+%%{
+  init: { 'theme': 'forest' }
+}%%
 erDiagram
     USUARIO ||--o{ USUARIO_PAPEL : atribui
     PAPEL ||--o{ USUARIO_PAPEL : atribui

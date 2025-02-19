@@ -35,16 +35,19 @@ Para a execução do fluxo de atendimento da população indígena, é necessár
     - **Farmacêutico/Atendente:** Responsável pelo registro do atendimento da solicitação realizada pelo DSEI.
 
 ```mermaid
+%%{
+  init: { 'theme': 'forest' }
+}%%
     sequenceDiagram
-        box Red Gestão Federal
+        box Gestão Federal
             participant Gestão do Programa Farmácia Popular
             participant Gestor da Secretaria de Saúde Indígena
         end
-        box Green Saúde Indígena
+        box Saúde Indígena
             participant Responsável DSEI
             participant Encarregado DSEI
         end
-        box Gray Farmácia Conveniada
+        box Farmácia Conveniada
             participant Responsável Legal
             participant Farmacêutico/Atendente
         end
@@ -62,6 +65,9 @@ Cada um dos papéis em questão possuem um conjunto de recursos específicos, co
 Cada papel deverá estar vinculado a um conjunto recursos. Um recurso representa uma funcionalidade específica da aplicação, que poderá ser acessada por um ou mais papéis.
 
 ```mermaid
+%%{
+  init: { 'theme': 'forest' }
+}%%
     graph TD
         A[Recurso] -->|Representa| B[Funcionalidade Específica da Aplicação]
 ```
@@ -69,6 +75,9 @@ Cada papel deverá estar vinculado a um conjunto recursos. Um recurso representa
 Os recursos vinculados deverão estar vinculados a um papel. Esta associação deverá ser implementada de forma a garantir a segregação de privilégios, garantindo que cada ator tenha acesso apenas aos recursos que lhe são permitidos. É importante pontuar que um recurso poderá ser acessado por mais de um papel, e um papel poderá ter acesso a mais de um recurso.
 
 ```mermaid
+%%{
+  init: { 'theme': 'forest' }
+}%%
     graph LR
         A[Recurso 1] -->|Acesso| B((Papel 1))
         A -->|Acesso| C((Papel 2))
@@ -111,6 +120,9 @@ Modelo de Dados para recursos da aplicação FPB-PO.
 Diagrama de Entidade e Relacionamento
 
 ```mermaid
+%%{
+  init: { 'theme': 'forest' }
+}%%
 erDiagram
     PAPEL {
         number id

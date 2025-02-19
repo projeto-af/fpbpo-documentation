@@ -38,6 +38,9 @@ O processo de autorização envolve a interação entre um Cliente (aplicação)
 Abaixo, o diagrama de sequência ilustra o fluxo em questão.
 
 ```mermaid
+%%{
+  init: { 'theme': 'forest' }
+}%%
 sequenceDiagram
 participant Cliente
 participant Aplicação

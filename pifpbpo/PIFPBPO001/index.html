@@ -161,7 +161,10 @@ Este fluxo possui particularidades intrinsecas ao seu objetivo, havendo múltipl
 <li><strong>Solicitação de token de acesso:</strong> O cliente solicita um token de acesso ao Servidor de Autorização, enviando o código de autorização e suas credenciais.</li>
 </ol>
 <p>Abaixo, o diagrama de sequência ilustra o fluxo em questão.</p>
-<div class="mermaid">sequenceDiagram
+<div class="mermaid">%%{
+  init: { 'theme': 'forest' }
+}%%
+sequenceDiagram
 participant Cliente
 participant Aplicação
 participant Gov.br

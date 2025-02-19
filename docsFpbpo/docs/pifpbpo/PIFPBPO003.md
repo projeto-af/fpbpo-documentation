@@ -131,4 +131,4 @@ erDiagram
 
 Abaixo, o protótipo de tela para o fluxo de atribuição de papéis.
 
-[Protótipos Farmácia Popular do Brasil Povos Originários](https://xd.adobe.com/view/10b5d8c8-f99d-4e67-ae0d-461860c55301-45e6/)
+[Protótipos Farmácia Popular do Brasil Povos Originários](https://xd.adobe.com/view/10b5d8c8-f99d-4e67-ae0d-461860c55301-45e6/screen/1baa9665-1577-4ef6-873b-56e821a5ed85/?fullscreen)

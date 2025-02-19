@@ -124,7 +124,6 @@ Para recuperar os recursos relacionados a confiabilidade, a aplicação deverá 
 
 | Nível | Atributo        | Descrição                                                | Cardinalidade | Tipo de Dado | Tamanho | Formato         |
 | :--- |:----------------|:---------------------------------------------------------|:--------------|:-------------|:--------|:----------------|
-| 1 | CPF do usuário  | CPF do usuário a qual será atribído o perfil             | (1, 1)        | number | -       | -               |
 | 1 | Nome            | Nome do usuário                                          | (1, 1)        | string | 100     | -               |
 | 1 | Nome Social     | Nome Social cadastrado no Gov.br do usuário autenticado. | (0, 1)        | string | 100     | -               |
 | 1 | E-mail          | E-mail do usuário                                        | (1, 1)        | string | 100     | e-mail          |

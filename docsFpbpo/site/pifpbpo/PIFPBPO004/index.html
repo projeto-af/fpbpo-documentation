@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>PIFPBPO004 - Gestão de Farmácias/Drogarias Credenciadas ao Programa - Farmácia Popular do Brasil - Povos Originários</title>
+<link href="../../css/theme.css" rel="stylesheet"/>
+<link href="../../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<link href="../../assets/css/extra.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "PIFPBPO004 - Gest\u00e3o de Farm\u00e1cias/Drogarias Credenciadas ao Programa";
+        var mkdocs_page_input_path = "pifpbpo/PIFPBPO004.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a href="../..">
+<img alt="Logo" class="logo" src="../../assets/img/logo.png"/>
+</a><div role="search">
+<form action="../../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">PIFPBPO</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO001/">PIFPBPO001 - Autenticação e Autorização</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO002/">PIFPBPO002 - Papéis e recursos</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO003/">PIFPBPO003 - Atribuição de papéis a atores</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="#">PIFPBPO004 - Gestão de Farmácias/Drogarias Credenciadas ao Programa</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resumo">Resumo</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#motivacao">Motivação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#implementacao">Implementação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#elementos-de-interface">Elementos de Interface</a>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Sobre</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sobre/sobre/">Sobre o Projeto</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../..">Farmácia Popular do Brasil - Povos Originários</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
+<li class="breadcrumb-item">PIFPBPO</li>
+<li class="breadcrumb-item active">PIFPBPO004 - Gestão de Farmácias/Drogarias Credenciadas ao Programa</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="proposta-de-implementacao-farmacia-popular-do-brasil-povos-originarios">Proposta de Implementação Farmácia Popular do Brasil Povos Originários</h1>
+<table>
+<thead>
+<tr>
+<th><strong>PIFPB:</strong></th>
+<th>004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título:</strong></td>
+<td>Gestão de Farmácias/Drogarias Credenciadas ao Programa</td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Jessé Azevêdo <a href="mailto:jesse.azevedo@saude.gov.br">jesse.azevedo@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Michelly Ribeiro <a href="mailto:michelly.ribeiro@saude.gov.br">michelly.ribeiro@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Bruno de Oliveira <a href="mailto:bruno.baltazar@saude.gov.br">bruno.baltazar@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Status:</strong></td>
+<td>Em validação</td>
+</tr>
+<tr>
+<td><strong>Versão:</strong></td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-revisoes">Histórico de Revisões</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Versão</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Autor</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>23/02/2025</td>
+<td>Jessé Azevêdo</td>
+<td>Criação do documento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resumo">Resumo</h2>
+<p>Este documento tem por objetivo especificar detalhes da manutenção e credenciamento de uma farmácia ou drogaria ao programa programa Farmácia Popular do Brasil Povos Orginários.</p>
+<h2 id="motivacao">Motivação</h2>
+<p>O Programa Farmácia Popular do Brasil Povos Originários (FPB-PO), é uma aplicação voltada a atender um fluxo específico de atendimento para o Programa Farmácia Popular do Brasil com foco nas necessidades da saúde indígena.  </p>
+<p>Uma etapa crucial para viabilizar o atendimento diz respeito ao credenciamento de farmácias e drogarias ao programa e o controle da participação destas no programa.  </p>
+<p>Cada farmácia passa por análises que ocorrem após uma venda de medicamentos para a população indígena, onde são avaliados critérios que podem alterar o estado de uma farmácia/drogaria credenciada ao programa. A aplicação deve permitir ao gestor do programa a alteração do estado de uma farmácia livremente mediante justificativa e motivação técnica adequada.  </p>
+<p>Além do exposto, há de se convir que o credenciamento de uma farmácia se dá com o objetivo de atender uma necessidade expressa pela administração pública mediante edital de credenciamento, onde são estabelecidos critérios e condições para a participação de farmácias/drogarias no programa. Assim, é necessário manter um controle rígido do histórico de credenciamento de uma farmácia/drogaria credenciada, mantendo informações como endereço e contato da farmácia/drogaria, data de credenciamento, data de descredenciamento ou quaisquer alterações no registro da farmácia/drogaria.</p>
+<h2 id="implementacao">Implementação</h2>
+<p>O recurso manter farmácia/drogaria credenciada deve estar disponível apenas para atores com o papel "Gestor do Programa Farmácia Popular" devidamente ativo, permitindo a manutenção dos dados de uma farmácia/drogaria credenciada ao programa.</p>
+<p>Ao cadastrar uma nova farmácia/drogaria credenciada, o sistema deverá consumir os dados da base de dados de Pessoa Jurídica presente em DBPESSOA e complementar com dados de Geolocalização, como latitude e longitude, para facilitar a localização da farmácia/drogaria no mapa.</p>
+<div class="mermaid">%%{
+  init: { 'theme': 'forest' }
+}%%
+sequenceDiagram
+    participant Gestor as Gestor do Programa Farmácia Popular
+    participant Sistema
+    participant DBPESSOA as Banco de Dados DBPESSOA
+
+    Gestor-&gt;&gt;Sistema: Informa CNPJ da Farmácia/Drogaria
+    activate Sistema
+    Sistema-&gt;&gt;DBPESSOA: Consulta dados PJ com CNPJ
+    activate DBPESSOA
+    DBPESSOA--&gt;&gt;Sistema: Retorna dados PJ da farmácia/drogaria
+    deactivate DBPESSOA
+    Sistema-&gt;&gt;Gestor: Exibe dados da farmácia/drogaria
+    Gestor-&gt;&gt;Sistema: Adiciona dados complementares
+    Sistema-&gt;&gt;Sistema: Valida dados adicionais
+    Sistema-&gt;&gt;Sistema: Salva dados completos (PJ + adicionais)
+    Sistema--&gt;&gt;Gestor: Confirmação de salvamento
+    deactivate Sistema
+</div>
+<p>Cada farmácia/drogaria possui um estado que identifica se a mesma está apta a atender a população indígena no contexto do programa. Os estados possíveis são: credenciada, descredenciada e em análise. Podendo haver uma livre alternância estre estes estados. Farmácias/Drogarias cujo estado seja igual a descredenciada não poderão atender a população indígena, além disso, aquelas em estado "em análise" ficam temporariamento suspensas de participar do programa até que o estado seja alterado para "credenciada". Além disso, é necessário manter um rigído controle do histórico de credenciamento de uma farmácia/drogaria credenciada, mantendo informações como endereço e contato da farmácia/drogaria, data de credenciamento, data de descredenciamento ou quaisquer alterações no registro da farmácia/drogaria.</p>
+<div class="mermaid">%%{
+  init: { 'theme': 'forest' }
+}%%
+graph LR
+    A[Farmácia/Drogaria] --&gt;|Credenciada| B((Credenciada))
+    B --&gt;|Em Análise| D((Em Análise))
+    D --&gt;|Credenciada| B
+    D --&gt;|Descredenciada| C((Descredenciada))
+    B --&gt;|Descredenciada| C((Descredenciada))
+</div>
+<p>O Sistema deverá consultar a base de pessoa jurídica mensalmente para verificar a situação cadastral da farmácia/drogaria credenciada, e caso a mesma não seja encontrada, esteja irregular junto a Receita Federal ou tenha seus dados cadastrais alterados, o sistema deverá alterar o estado da farmácia/drogaria para "em Análise", para que um ator com papel Gestor do Programa Farmácia Popular possa avaliar a situação e tomar as devidas providências.</p>
+<div class="mermaid">%%{
+  init: { 'theme': 'forest' }
+}%%
+sequenceDiagram
+    participant Sistema
+    participant DBPESSOA as Banco de Dados DBPESSOA
+    participant Gestor as Gestor do Programa Farmácia Popular
+
+    Sistema-&gt;&gt;DBPESSOA: Consulta dados PJ
+    activate DBPESSOA
+    DBPESSOA--&gt;&gt;Sistema: Retorna dados PJ
+    deactivate DBPESSOA
+    Sistema-&gt;&gt;Sistema: Verifica situação cadastral
+    Sistema-&gt;&gt;Sistema: Verifica situação fiscal
+    Sistema-&gt;&gt;Sistema: Verifica situação tributária
+    Sistema-&gt;&gt;Sistema: Altera estado para "Em Análise"
+    Sistema-&gt;&gt;Sistema: Adiciona motivo de alteração
+    Sistema-&gt;&gt;Gestor: Notifica alteração de estado
+</div>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ul>
+<li>A aplicação deverá manter a relação de farmácias/drogarias credenciadas ao programa.</li>
+<li>Os dados do CNPJ credenciado deverá ser oriundo da DBPESSOA.</li>
+<li>Dados deverão ser atualizados mensalmente em consulta à DBPESSOA.</li>
+<li>Qualquer alteração realizada no cadastro da farmácia credenciada deverá ser registrada no histórico.</li>
+<li>O estado da farmácia credenciada deverá ser alterado para "Em Análise" caso a mesma não seja encontrada na DBPESSOA.</li>
+<li>O estado da farmácia credenciada deverá ser alterado para "Em Análise" caso a mesma esteja irregular junto a Receita Federal.</li>
+<li>O estado da farmácia credenciada deverá ser alterado para "Em Análise" caso a mesma tenha seus dados cadastrais alterados.</li>
+<li>Apenas atores com papel "Gestor do Programa Farmácia Popular" poderão alterar o estado de uma farmácia credenciada.</li>
+<li>Sempre que o sistema mude o estado de uma farmácia credenciada, o mesmo deverá registrar o motivo da alteração que poderá ser "Mudança de dados cadastrais", "Farmácia/Drograria credenciada está irregular com Receita Federal".</li>
+<li>Alterações de estado realizadas pelo Gestor do Programa Farmácia Popular deverão ser justificadas e registradas no histórico da farmácia credenciada.</li>
+<li>O sistema deverá notificar o Gestor do Programa Farmácia Popular sempre que uma farmácia credenciada tiver seu estado alterado.</li>
+<li>O sistema deverá manter um histórico de alterações de estado de uma farmácia credenciada com uma réplica de todos os dados anteriores.</li>
+<li>A tela "Manter Farmácia/Drogaria Credenciada" deverá permitir a visualização da relação de Responsáveis legais incritos no estabelecimento.</li>
+</ul>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
+<p>Modelo de Dados para papéis da aplicação FPB-PO.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Atributo</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Cardinalidade</th>
+<th style="text-align: left;">Tipo de Dado</th>
+<th style="text-align: left;">Tamanho</th>
+<th style="text-align: left;">Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CNPJ</td>
+<td style="text-align: left;">Cadastro do credenciado na Base Nacional de Pessoas Jurídicas</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">xx.xxxxxx/xxxx-xx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Razão Social</td>
+<td style="text-align: left;">Razão Social do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome Fantasia</td>
+<td style="text-align: left;">Nome Fantasia do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CNPJ Matriz</td>
+<td style="text-align: left;">CNPJ da matriz do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">xx.xxxxxx/xxxx-xx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Endereço</td>
+<td style="text-align: left;">Endereço do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Bairro</td>
+<td style="text-align: left;">Bairro do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CEP</td>
+<td style="text-align: left;">CEP do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">xxxxx-xxx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Cidade</td>
+<td style="text-align: left;">Cidade do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">UF</td>
+<td style="text-align: left;">UF do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Telefone</td>
+<td style="text-align: left;">Telefone do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">(xx) xxxx-xxxx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">E-mail</td>
+<td style="text-align: left;">E-mail do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">Latitude do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">Longitude do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Licença</td>
+<td style="text-align: left;">Número da licença sanitária do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Data de expiração da licença</td>
+<td style="text-align: left;">Data de expiração da licença sanitária do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">date</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">dd/mm/yyyy</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Estado</td>
+<td style="text-align: left;">Estado atual do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Motivo</td>
+<td style="text-align: left;">Motivo da alteração de estado do estabelecimento credenciado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="elementos-de-interface">Elementos de Interface</h2>
+<p>Em desenvolvimento.</p>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../PIFPBPO003/" title="PIFPBPO003 - Atribuição de papéis a atores"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../sobre/sobre/" title="Sobre o Projeto">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../PIFPBPO003/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../sobre/sobre/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "../..";</script>
+<script src="../../js/theme_extra.js"></script>
+<script src="../../js/theme.js"></script>
+<script src="../../search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

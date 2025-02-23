@@ -110,6 +110,7 @@ sequenceDiagram
 - O sistema deverá notificar o Gestor do Programa Farmácia Popular sempre que uma farmácia credenciada tiver seu estado alterado.
 - O sistema deverá manter um histórico de alterações de estado de uma farmácia credenciada com uma réplica de todos os dados anteriores.
 - A tela "Manter Farmácia/Drogaria Credenciada" deverá permitir a visualização da relação de Responsáveis legais incritos no estabelecimento.
+- Deverá ser possível ao ator com papel "Gestor do Programa Farmácia Popular" visualizar o histórico de alterações de uma farmácia/drogaria credenciada ao programa.
 
 ## Modelo de Dados
 

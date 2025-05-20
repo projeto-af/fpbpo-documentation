@@ -146,6 +146,12 @@
 <td>Jessé Azevêdo</td>
 <td>Criação do documento</td>
 </tr>
+<tr>
+<td>1.1</td>
+<td>19/05/2024</td>
+<td>Jessé Azevêdo</td>
+<td>Edição de regras e diagrama de atribuição de papéis</td>
+</tr>
 </tbody>
 </table>
 <h2 id="resumo">Resumo</h2>
@@ -184,21 +190,25 @@ graph LR
         participant Farmacêutico/Atendente
     end
     Gestão do Programa Farmácia Popular-&gt;&gt;Gestor da Secretaria de Saúde Indígena: Atribui papel para ator
-    Gestor da Secretaria de Saúde Indígena-&gt;&gt;Responsável DSEI: Atribui papel para ator
-    Responsável DSEI-&gt;&gt;Encarregado DSEI: Atribui papel para ator
-    Gestão do Programa Farmácia Popular-&gt;&gt;Responsável Legal: Atribui papel para ator
-    Responsável Legal-&gt;&gt;Farmacêutico/Atendente: Atribui papel para ator
-
     Gestão do Programa Farmácia Popular-&gt;&gt;Gestor da Secretaria de Saúde Indígena: Revoga papel atribuído
-    Gestor da Secretaria de Saúde Indígena-&gt;&gt;Responsável DSEI: Revoga papel atribuído
-    Responsável DSEI-&gt;&gt;Encarregado DSEI: Revoga papel atribuído
+    Gestão do Programa Farmácia Popular-&gt;&gt;Responsável DSEI: Atribui papel para ator
+    Gestão do Programa Farmácia Popular-&gt;&gt;Responsável DSEI: Revoga papel atribuído
+    Gestão do Programa Farmácia Popular-&gt;&gt;Encarregado DSEI: Atribui papel para ator
+    Gestão do Programa Farmácia Popular-&gt;&gt;Encarregado DSEI: Revoga papel atribuído
+    Gestão do Programa Farmácia Popular-&gt;&gt;Responsável Legal: Atribui papel para ator
     Gestão do Programa Farmácia Popular-&gt;&gt;Responsável Legal: Revoga papel atribuído
-    Responsável Legal-&gt;&gt;Farmacêutico/Atendente: Revoga papel atribuído
-
+    Gestão do Programa Farmácia Popular-&gt;&gt;Farmacêutico/Atendente: Atribui papel para ator
+    Gestão do Programa Farmácia Popular-&gt;&gt;Farmacêutico/Atendente: Revoga papel atribuído
     Gestão do Programa Farmácia Popular-&gt;&gt;Gestão do Programa Farmácia Popular: Revoga seu papel dentro da aplicação
+    Gestor da Secretaria de Saúde Indígena-&gt;&gt;Responsável DSEI: Atribui papel para ator
+    Gestor da Secretaria de Saúde Indígena-&gt;&gt;Responsável DSEI: Revoga papel atribuído
     Gestor da Secretaria de Saúde Indígena-&gt;&gt;Gestor da Secretaria de Saúde Indígena: Revoga seu papel dentro da aplicação
+    Responsável DSEI-&gt;&gt;Encarregado DSEI: Atribui papel para ator
+    Responsável DSEI-&gt;&gt;Encarregado DSEI: Revoga papel atribuído
     Responsável DSEI-&gt;&gt;Responsável DSEI: Revoga seu papel dentro da aplicação
     Encarregado DSEI-&gt;&gt;Encarregado DSEI: Revoga seu papel dentro da aplicação
+    Responsável Legal-&gt;&gt;Farmacêutico/Atendente: Atribui papel para ator
+    Responsável Legal-&gt;&gt;Farmacêutico/Atendente: Revoga papel atribuído
     Responsável Legal-&gt;&gt;Responsável Legal: Revoga seu papel dentro da aplicação
     Farmacêutico/Atendente-&gt;&gt;Farmacêutico/Atendente: Revoga seu papel dentro da aplicação
 </div>
@@ -210,10 +220,10 @@ graph LR
 <li>Papéis relacionados a Farmácia/Drogaria conveniada ao programa precisam estar atrelados a uma CNPJ devidamente credenciado.</li>
 <li>O papel "Gestão do Programa Farmácia Popular" só poderá ser atribuído por um ator com o mesmo papel.</li>
 <li>O papel "Gestor da Secretaria de Saúde Indígena" poderá ser atribuído por um ator com o papel "Gestão do Programa Farmácia Popular" e "Gestor da Secretaria de Saúde Indígena".</li>
-<li>O papel "Responsável DSEI" só poderá ser atribuído por um ator com o papel "Gestor da Secretaria de Saúde Indígena".</li>
-<li>O papel "Encarregado DSEI" só poderá ser atribuído por um ator com o papel "Responsável DSEI".</li>
+<li>O papel "Responsável DSEI" poderá ser atribuído por um ator com o papel "Gestor da Secretaria de Saúde Indígena" e "Gestão do Programa Farmácia Popular".</li>
+<li>O papel "Encarregado DSEI" poderá ser atribuído por um ator com o papel "Responsável DSEI" e "Gestão do Programa Farmácia Popular".</li>
 <li>O papel "Responsável Legal" só poderá ser atribuído por um ator com o papel "Gestão do Programa Farmácia Popular".</li>
-<li>O papel "Farmacêutico/Atendente" só poderá ser atribuído por um ator com o papel "Responsável Legal".</li>
+<li>O papel "Farmacêutico/Atendente" poderá ser atribuído por um ator com o papel "Responsável Legal" e "Gestão do Programa Farmácia Popular".</li>
 <li>Um ator poderá possuir mais de um papel dentro da aplicação.</li>
 <li>Um ator poderá remover um papel atribuído a si.</li>
 <li>Um ator com um papel que tenha privilégios para conceder um papel a outro ator poderá revogar o mesmo conjutno de papéis ao qual possui privilégios de atribuir.</li>

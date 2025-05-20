@@ -11,9 +11,10 @@
 
 ## Histórico de Revisões
 
-| **Versão** | **Data**   | **Autor**     | **Descrição** |
-| --- |------------|---------------|----------------------|
-| 1.0 | 15/02/2025 | Jessé Azevêdo | Criação do documento |
+| **Versão** | **Data**   | **Autor**     | **Descrição**                       |
+| --- |------------|---------------|--------------------------------------------|
+| 1.0 | 15/02/2025 | Jessé Azevêdo | Criação do documento                       |
+| 1.1 | 19/05/2024 | Jessé Azevêdo | Edição de diagrama de atribuição de papéis |
 
 ## Resumo
 
@@ -52,9 +53,12 @@ Para a execução do fluxo de atendimento da população indígena, é necessár
             participant Farmacêutico/Atendente
         end
         Gestão do Programa Farmácia Popular->>Gestor da Secretaria de Saúde Indígena: Atribui papel para ator
+        Gestão do Programa Farmácia Popular->>Responsável DSEI: Atribui papel para ator
+        Gestão do Programa Farmácia Popular->>Encarregado DSEI: Atribui papel para ator
+        Gestão do Programa Farmácia Popular->>Responsável Legal: Atribui papel para ator
+        Gestão do Programa Farmácia Popular->>Farmacêutico/Atendente: Atribui papel para ator
         Gestor da Secretaria de Saúde Indígena->>Responsável DSEI: Atribui papel para ator
         Responsável DSEI->>Encarregado DSEI: Atribui papel para ator
-        Gestão do Programa Farmácia Popular->>Responsável Legal: Atribui papel para ator
         Responsável Legal->>Farmacêutico/Atendente: Atribui papel para ator
 ```
 

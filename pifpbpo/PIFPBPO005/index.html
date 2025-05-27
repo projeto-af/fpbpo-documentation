@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>PIFPBPO005 - Gestão de Estabelecimentos Indígenas Participantes - Farmácia Popular do Brasil - Povos Originários</title>
+<link href="../../css/theme.css" rel="stylesheet"/>
+<link href="../../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<link href="../../assets/css/extra.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "PIFPBPO005 - Gest\u00e3o de Estabelecimentos Ind\u00edgenas Participantes";
+        var mkdocs_page_input_path = "pifpbpo/PIFPBPO005.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a href="../..">
+<img alt="Logo" class="logo" src="../../assets/img/logo.png"/>
+</a><div role="search">
+<form action="../../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">PIFPBPO</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO001/">PIFPBPO001 - Autenticação e Autorização</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO002/">PIFPBPO002 - Papéis e recursos</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO003/">PIFPBPO003 - Atribuição de papéis a atores</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PIFPBPO004/">PIFPBPO004 - Gestão de Farmácias/Drogarias Credenciadas ao Programa</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="#">PIFPBPO005 - Gestão de Estabelecimentos Indígenas Participantes</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#historico-de-revisoes">Histórico de Revisões</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resumo">Resumo</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#motivacao">Motivação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#implementacao">Implementação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#criterios-de-aceitacao">Critérios de Aceitação</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#proposta-de-modelagem">Proposta de modelagem</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#elementos-de-interface">Elementos de Interface</a>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Sobre</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sobre/sobre/">Sobre o Projeto</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../..">Farmácia Popular do Brasil - Povos Originários</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href="../.."></a></li>
+<li class="breadcrumb-item">PIFPBPO</li>
+<li class="breadcrumb-item active">PIFPBPO005 - Gestão de Estabelecimentos Indígenas Participantes</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="proposta-de-implementacao-farmacia-popular-do-brasil-povos-originarios">Proposta de Implementação Farmácia Popular do Brasil Povos Originários</h1>
+<table>
+<thead>
+<tr>
+<th><strong>PIFPB:</strong></th>
+<th>005</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título:</strong></td>
+<td>Gestão de Estabelecimentos indígenas participantes do programa</td>
+</tr>
+<tr>
+<td><strong>Autor:</strong></td>
+<td>Jessé Azevêdo <a href="mailto:jesse.azevedo@saude.gov.br">jesse.azevedo@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Michelly Ribeiro <a href="mailto:michelly.ribeiro@saude.gov.br">michelly.ribeiro@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Revisor:</strong></td>
+<td>Bruno de Oliveira <a href="mailto:bruno.baltazar@saude.gov.br">bruno.baltazar@saude.gov.br</a></td>
+</tr>
+<tr>
+<td><strong>Status:</strong></td>
+<td>Validado</td>
+</tr>
+<tr>
+<td><strong>Versão:</strong></td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="historico-de-revisoes">Histórico de Revisões</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Versão</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Autor</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>27/05/2025</td>
+<td>Jessé Azevêdo</td>
+<td>Criação do documento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resumo">Resumo</h2>
+<p>Este documento tem por objetivo especificar detalhes da manutenção dos estabelecimentos indígenas aptos ao uso do programa na modalidade de atendimento aos Povos Originários.</p>
+<h2 id="motivacao">Motivação</h2>
+<p>O Programa Farmácia Popular do Brasil Povos Originários (FPB-PO), é uma aplicação voltada a atender um fluxo específico de atendimento para o Programa Farmácia Popular do Brasil com foco nas necessidades da saúde indígena.</p>
+<p>O fluxo de atendimento do FPB-PO envolve um responsável legal, pessoa física legalmente instituída por instrumento definido no âmbito da Secretaria Especial de Saúde Indígena (SESAI), que atua como intermediário entre o usuário indígena e a farmácia/drogaria credenciada. Neste contexto, cada um dos responsáveis legais é vinculado a um ou mais estabelecimentos indígenas, que devem estar previamente cadastrados e habilitados no sistema.</p>
+<h2 id="implementacao">Implementação</h2>
+<p>Os estabelecimentos indígenas participantes do programa devem ser geridos por atores com o papel "Gestor do Programa Farmácia Popular" ou "Gestor da Secretaria de Saúde Indígena", permitindo ações de inclusão e edição de um estabelecimento indígena no Programa Farmácia Popular do Brasil.</p>
+<p>Ao habilitar uma nova farmácia/drogaria credenciada, o sistema deverá consumir os dados da base de dados do Cadastro Nacional de Estabelecimentos de Saúde (CNES), por meio do consumo do serviço de consulta ao CNES (SOA-CNES). Detalhes da integração ao serviço SOA-CNES estão especificados no Portal de Serviços do DATASUS, Portfólio específico do SOA CNES (https://servicos-datasus.saude.gov.br/detalhe/k7JNyFF2mi).</p>
+<p>Pontua-se que o SOA-CNES é um webservice do CNES é público, no entanto requer credenciais de acesso para todas as operações realizadas em seus serviços. As credenciais padrão para acesso público são:</p>
+<div class="admonition note">
+<p class="admonition-title">Importante</p>
+<p><strong>Usuário:</strong> <code>CNES.PUBLICO</code><br/>
+<strong>Senha:</strong> <code>cnes#2015public</code></p>
+</div>
+<p>Essas credenciais devem ser incluídas no Header da mensagem SOAP, utilizando o padrão WS-Security.</p>
+<p><strong>Exemplo de Header SOAP com WS-Security:</strong></p>
+<pre><code class="language-XML">&lt;soap:Header&gt;
+    &lt;wsse:Security soap:mustUnderstand=”true” xmlns:wsse=”http://docs.oasis-open.
+    org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd” xmlns:wsu=”http://
+    docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd”&gt;
+     &lt;wsse:UsernameTokenwsu:Id=”UsernameToken-5FCA58BED9F27C406E14576381084652”&gt;
+     &lt;wsse:Username&gt;CNES.PUBLICO&lt;/wsse:Username&gt;
+     &lt;wsse:Password Type=”http://docs.oasis-open.org/wss/2004/01/
+    oasis-200401-wss-username-token-profile-1.0#PasswordText”&gt;cnes#2015public&lt;/wsse:Password&gt;
+     &lt;/wsse:UsernameToken&gt;
+    &lt;/wsse:Security&gt;
+&lt;/soap:Header&gt;
+</code></pre>
+<p>A aplicação deverá consumir apenas o recurso CNES Service do Webservice SOA-CNES, que permite a consulta de estabelecimentos de saúde. A consulta deve ser realizada utilizando o CNES do estabelecimento, retornando os dados necessários para o cadastro no sistema FPB-PO.</p>
+<p>Ademais, o Webservice SOA-CNES utiliza o padrão SOAP 1.1 e 1.2. No entanto, a integração deverá ser feita utilizando a versão 1.2. Para maiores informações, consulte o manual de integração do SOA-CNES disponível no Portal de Serviços do DATASUS ou <a href="https://mobileapps.saude.gov.br/portal-servicos/files/f3bd659c8c8ae3ee966e575fde27eb58/b8c9a149a5160a1db98733e17e1db4eb_8hq4wpccr.pdf">clique aqui</a>.</p>
+<h2 id="criterios-de-aceitacao">Critérios de Aceitação</h2>
+<ul>
+<li>A aplicação deverá manter a relação de estabelecimentos de saúde que poderão submeter solicitações ao programa Farmácia Popular do Brasil na modalidade de atendimento Povos Originários.</li>
+<li>Apenas estabelecimentos de saúde indígenas válidos cadastrados no CNES poderão ser incluídos no PFPB-PO.</li>
+<li>Qualquer alteração realizada no para um estabelecimento previamente cadastrado deverá ser registrado.</li>
+<li>Apenas atores com papel "Gestor do Programa Farmácia Popular" e "Gestor da Secretaria de Saúde Indígena" poderão adicionar ou alterar um estabelecimento indígena.</li>
+<li>Um estabelecimento indígena não pode ser excluído da base de dados.</li>
+<li>Um estabelecimento indígena pode ser inativado , o que o tornará indisponível para novas solicitações, mas manterá seu histórico de alterações.</li>
+<li>Ao inativar um estabelecimento indígena, o sistema deverá registrar a data, usuário responsável e o motivo da inativação.</li>
+<li>Um estabelecimento indígena poderá ser reativado, caso necessário, desde que esteja ativo no CNES.</li>
+<li>Ao reativar um estabelecimento indígena, o sistema deverá registrar a data, usuário responsável e o motivo da reativação.</li>
+<li>A tela "Manter Estabelecimentos Indígenas" deverá permitir a visualização da relação de Responsáveis legais e encarregados permissionados no estabelecimento.</li>
+<li>Deverá ser possível ao ator com papel "Gestor do Programa Farmácia Popular" e "Gestor da Secretaria de Saúde Indígena" visualizar o histórico de alterações de um estabelecimento indígena.</li>
+</ul>
+<h2 id="modelo-de-dados">Modelo de Dados</h2>
+<p>Modelo de Dados para papéis da aplicação FPB-PO.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Atributo</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Cardinalidade</th>
+<th style="text-align: left;">Tipo de Dado</th>
+<th style="text-align: left;">Tamanho</th>
+<th style="text-align: left;">Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Código CNES</td>
+<td style="text-align: left;">Código CNES do estabelecimento cadastrado</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Código da Unidade de Saúde</td>
+<td style="text-align: left;">Código da Unidade de Saúde no CNES</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">31</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome Fantasia</td>
+<td style="text-align: left;">Nome fantasia do estabelecimento de saúde indígena</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">150</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome Empresarial</td>
+<td style="text-align: left;">Nome empresarial da Unidade de Saúde (razão social)</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">255</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CNPJ</td>
+<td style="text-align: left;">CNPJ do estabelecimento</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">xx.xxxxxx/xxxx-xx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Tipo de Endereço</td>
+<td style="text-align: left;">Código do tipo de endereço do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">numérico</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Tipo de Logradouro</td>
+<td style="text-align: left;">Código do tipo de logradouro do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">numérico</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Descrição do tipo Logradouro</td>
+<td style="text-align: left;">Descrição do tipo de logradouro do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">60</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome Logradouro</td>
+<td style="text-align: left;">Nome do logradouro do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">255</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Número Logradouro</td>
+<td style="text-align: left;">Número do logradouro do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Complemento Logradouro</td>
+<td style="text-align: left;">Complemento do logradouro do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Código Bairro</td>
+<td style="text-align: left;">Código do Bairro do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">numérico</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Descrição do Bairro</td>
+<td style="text-align: left;">Descrição do Bairro do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">255</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CEP</td>
+<td style="text-align: left;">Código de Endereçamento Postal do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">xxxxx-xxx</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Código Município</td>
+<td style="text-align: left;">Código do município do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">numérico</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome Município</td>
+<td style="text-align: left;">Nome do município do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">255</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Código UF</td>
+<td style="text-align: left;">Código da Unidade Federativa do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">numérico</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Nome UF</td>
+<td style="text-align: left;">Nome da Unidade Federativa do estabelecimento no CNES</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">255</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">Latitude do estabelecimento credenciado</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">Longitude do estabelecimento credenciado</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Estado</td>
+<td style="text-align: left;">Estado atual de adesão à modalidade de atendimento aos PO</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">A - Ativo / I  - Inativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Histórico de Alterações</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0..N</td>
+<td style="text-align: left;">date</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">dd/mm/yyyy</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Data da Alteração</td>
+<td style="text-align: left;">Data em que a alteração foi realizada</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">date</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">dd/mm/yyyy</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Usuário Responsável</td>
+<td style="text-align: left;">Usuário que realizou a alteração</td>
+<td style="text-align: left;">1..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Motivo da Alteração</td>
+<td style="text-align: left;">Motivo da alteração realizada</td>
+<td style="text-align: left;">0..1</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">255</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="proposta-de-modelagem">Proposta de modelagem</h3>
+<div class="mermaid">---
+title: Exemplo de diagrama para implementação das relações Estabelecimentos Indígenas e Histórico de Alterações
+---
+%%{
+  init: { 'theme': 'forest' }
+}%%
+erDiagram
+    ESTABELECIMENTO {
+        string codigo_cnes PK "Código CNES do estabelecimento"
+        string nome_fantasia "Nome fantasia do estabelecimento"
+        string nome_empresarial "Nome empresarial do estabelecimento"
+        string cnpj "CNPJ do estabelecimento"
+        string tipo_endereco "Tipo de endereço do estabelecimento"
+        string tipo_logradouro "Tipo de logradouro do estabelecimento"
+        string nome_logradouro "Nome do logradouro do estabelecimento"
+        string numero_logradouro "Número do logradouro do estabelecimento"
+        string complemento_logradouro "Complemento do logradouro do estabelecimento"
+        string codigo_bairro "Código do bairro do estabelecimento"
+        string descricao_bairro "Descrição do bairro do estabelecimento"
+        string cep "CEP do estabelecimento"
+        string codigo_municipio "Código do município do estabelecimento"
+        string nome_municipio "Nome do município do estabelecimento"
+        string codigo_uf "Código da UF do estabelecimento"
+        string nome_uf "Nome da UF do estabelecimento"
+        float latitude "Latitude do estabelecimento"
+        float longitude "Longitude do estabelecimento"
+        string estado "Estado atual de adesão à modalidade de atendimento aos PO"
+    }
+
+    HISTORICO_ALTERACAO {
+        date data_alteracao PK "Data da alteração realizada"
+        string usuario_responsavel "Usuário que realizou a alteração"
+        string motivo_alteracao "Motivo da alteração realizada"
+    }
+
+    ESTABELECIMENTO ||--o{ HISTORICO_ALTERACAO : possui
+</div>
+<h2 id="elementos-de-interface">Elementos de Interface</h2>
+<p>Em desenvolvimento.</p>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../PIFPBPO004/" title="PIFPBPO004 - Gestão de Farmácias/Drogarias Credenciadas ao Programa"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../sobre/sobre/" title="Sobre o Projeto">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../PIFPBPO004/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../sobre/sobre/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "../..";</script>
+<script src="../../js/theme_extra.js"></script>
+<script src="../../js/theme.js"></script>
+<script src="../../search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

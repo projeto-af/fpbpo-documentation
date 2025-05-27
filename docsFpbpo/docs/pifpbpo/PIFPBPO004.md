@@ -11,10 +11,11 @@
 
 ## Histórico de Revisões
 
-| **Versão** | **Data**   | **Autor**        | **Descrição**                    |
-|------------|------------|------------------|----------------------------------|
-| 1.0        | 23/02/2025 | Jessé Azevêdo    | Criação do documento             |
-| 1.1        | 10/03/2025 | Michelly Ribeiro | Revisão e validação do documento |
+| **Versão** | **Data**   | **Autor**        | **Descrição**                                  |
+|------------|------------|------------------|------------------------------------------------|
+| 1.0        | 23/02/2025 | Jessé Azevêdo    | Criação do documento                           |
+| 1.1        | 10/03/2025 | Michelly Ribeiro | Revisão e validação do documento               |
+| 1.2        | 27/05/2025 | Jessé Azevêdo    | Adição de regras para habilitação de drogarias |
 
 ## Resumo
 
@@ -34,7 +35,7 @@ Uma vez apta, a farmácia ou drogaria credenciada, mediante a expresso interesse
 
 O recurso manter adesão de farmácia/drogaria credenciada a modalidade de atendimento Povos Originários deve estar disponível apenas para atores com o papel "Gestor do Programa Farmácia Popular" devidamente ativo, permitindo ação de inclusão e edição de uma farmácia/drogaria credenciada no Programa Farmácia Popular do Brasil.
 
-Ao cadastrar uma nova farmácia/drogaria credenciada, o sistema deverá consumir os dados da base de dados de Pessoa Jurídica presente em DBPOPFARMA e complementar com dados de Geolocalização, como latitude e longitude, para facilitar a localização da farmácia/drogaria no mapa.
+Ao habilitar uma nova farmácia/drogaria credenciada, o sistema deverá consumir os dados da base de dados de Pessoa Jurídica presente em DBPOPFARMA e complementar com dados de Geolocalização, como latitude e longitude, para facilitar a localização da farmácia/drogaria no mapa.
 
 ```mermaid
 %%{
@@ -77,15 +78,8 @@ Modelo de Dados para papéis da aplicação FPB-PO.
 |:------|:-----------------------------|:-----------------------------------------------------------------------------|:--------------|:-------------|:--------|:-------------------------|
 | 1     | CNPJ                         | Cadastro do credenciado na Base Nacional de Pessoas Jurídicas                | 1..1          | string       | 14      | xx.xxxxxx/xxxx-xx        |
 | 1     | Id Farmácia Credenciada      | Identificador da farmácia/drogaria no esquema DBPOPFARMA                     | 1..1          | integer      | -       |                          |
-| 1     | Endereço                     | Endereço do estabelecimento credenciado                                      | 1..1          | string       | 100     |                          |
-| 1     | Bairro                       | Bairro do estabelecimento credenciado                                        | 1..1          | string       | 50      |                          |
-| 1     | CEP                          | CEP do estabelecimento credenciado                                           | 1..1          | string       | 8       | xxxxx-xxx                |
-| 1     | Cidade                       | Cidade do estabelecimento credenciado                                        | 1..1          | string       | 50      |                          |
-| 1     | UF                           | UF do estabelecimento credenciado                                            | 1..1          | string       | 2       |                          |
-| 1     | Telefone                     | Telefone do estabelecimento credenciado                                      | 1..1          | string       | 15      | (xx) xxxx-xxxx           |
-| 1     | E-mail                       | E-mail do estabelecimento credenciado                                        | 1..1          | string       | 100     |                          |
-| 1     | Latitude                     | Latitude do estabelecimento credenciado                                      | 1..1          | string       | 20      |                          |
-| 1     | Longitude                    | Longitude do estabelecimento credenciado                                     | 1..1          | string       | 20      |                          |
+| 1     | Latitude                     | Latitude do estabelecimento credenciado                                      | 0..1          | string       | 20      |                          |
+| 1     | Longitude                    | Longitude do estabelecimento credenciado                                     | 0..1          | string       | 20      |                          |
 | 1     | Data Adesão                  | Data em que a farmácia credenciada aderiu à modalidade de atendimento aos PO | 1..1          | date         | -       | dd/mm/yyyy               |
 | 1     | Estado                       | Estado atual de adesão à modalidade de atendimento aos PO                    | 1..1          | string       | 1       | A - Ativo / I  - Inativo |
 

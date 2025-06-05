@@ -147,4 +147,8 @@ erDiagram
 
 ## Elementos de Interface
 
-Em desenvolvimento.
+![005aestabelecimento.png](../assets/img/005aestabelecimento.png)
+
+![005bestabelecimento.png](../assets/img/005bestabelecimento.png)
+
+![005cestabelecimento.png](../assets/img/005cestabelecimento.png)

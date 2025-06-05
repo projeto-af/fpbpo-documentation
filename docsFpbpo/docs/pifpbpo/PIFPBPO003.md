@@ -134,6 +134,22 @@ erDiagram
 
 ## Elementos de Interface
 
-Abaixo, o protótipo de tela para o fluxo de atribuição de papéis.
+### Consultar
 
-[Protótipos Farmácia Popular do Brasil Povos Originários](https://xd.adobe.com/view/10b5d8c8-f99d-4e67-ae0d-461860c55301-45e6/screen/1baa9665-1577-4ef6-873b-56e821a5ed85/?fullscreen)
+![002_AtribuirPapel.png](../assets/img/002_AtribuirPapel.png)
+
+### Atribuir
+
+![002a-AtribuirPapel.png](../assets/img/002a-AtribuirPapel.png)
+
+![002b-AtribuirPapel.png](../assets/img/002b-AtribuirPapel.png)
+
+#### Comportamento Esperado
+
+- Os campos CNPJ e Estabelecimento de saúde deverão ser apresentados de acordo com o papel selecionado.
+- O bloco dados do Estabelecimento de saúde só deverá ser apresentado se o papel selecionado for do grupo Saúde Indígena.
+- O bloco dados do CNPJ só deverá ser apresentado se o papel selecionado for do grupo Farmácia/Drogaria conveniada ao programa.
+
+![002c-AtribuirPapel.png](../assets/img/002c-AtribuirPapel.png)
+
+

@@ -62,6 +62,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#modelo-de-dados">Modelo de Dados</a>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#elementos-de-interface">Elementos de Interface</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#consultar">Consultar</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#atribuir">Atribuir</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#comportamento-esperado">Comportamento Esperado</a>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -352,8 +362,18 @@ erDiagram
     CNPJ ||--o{ USUARIO_PAPEL : contexto
 </div>
 <h2 id="elementos-de-interface">Elementos de Interface</h2>
-<p>Abaixo, o protótipo de tela para o fluxo de atribuição de papéis.</p>
-<p><a href="https://xd.adobe.com/view/10b5d8c8-f99d-4e67-ae0d-461860c55301-45e6/screen/1baa9665-1577-4ef6-873b-56e821a5ed85/?fullscreen">Protótipos Farmácia Popular do Brasil Povos Originários</a></p>
+<h3 id="consultar">Consultar</h3>
+<p><img alt="002_AtribuirPapel.png" src="../../assets/img/002_AtribuirPapel.png"/></p>
+<h3 id="atribuir">Atribuir</h3>
+<p><img alt="002a-AtribuirPapel.png" src="../../assets/img/002a-AtribuirPapel.png"/></p>
+<p><img alt="002b-AtribuirPapel.png" src="../../assets/img/002b-AtribuirPapel.png"/></p>
+<h4 id="comportamento-esperado">Comportamento Esperado</h4>
+<ul>
+<li>Os campos CNPJ e Estabelecimento de saúde deverão ser apresentados de acordo com o papel selecionado.</li>
+<li>O bloco dados do Estabelecimento de saúde só deverá ser apresentado se o papel selecionado for do grupo Saúde Indígena.</li>
+<li>O bloco dados do CNPJ só deverá ser apresentado se o papel selecionado for do grupo Farmácia/Drogaria conveniada ao programa.</li>
+</ul>
+<p><img alt="002c-AtribuirPapel.png" src="../../assets/img/002c-AtribuirPapel.png"/></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">

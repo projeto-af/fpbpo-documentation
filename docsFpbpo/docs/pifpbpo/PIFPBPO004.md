@@ -85,4 +85,8 @@ Modelo de Dados para papéis da aplicação FPB-PO.
 
 ## Elementos de Interface
 
-Em desenvolvimento.
+![004adrogaria.png](../assets/img/004adrogaria.png)
+
+![004bdrogaria.png](../assets/img/004bdrogaria.png)
+
+![004cdrogaria.png](../assets/img/004cdrogaria.png)
